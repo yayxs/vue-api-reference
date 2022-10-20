@@ -14,7 +14,11 @@ const router = createRouter({
       name: 'reactive',
       component: () => import('../views/ReactiveView.vue')
     },
-
+    {
+      path: '/computed',
+      name: 'computed',
+      component: () => import('../views/ComputedView.vue')
+    },
     {
       path: '/ref',
       name: 'ref',

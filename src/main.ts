@@ -11,3 +11,11 @@ app.use(router)
 
 // dom 元素 | 选择器字符串
 app.mount('#app')
+
+const app2 = createApp({
+  data() {
+    return {
+      count: 0
+    }
+  }
+})

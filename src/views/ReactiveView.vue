@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import { reactive } from 'vue'
+import { nextTick, reactive } from 'vue'
 const array = reactive([])
 
 const object = reactive({})
 
-const func = () => {
-  console.log('func is run ')
+const state = reactive({
+  count: 0
+})
+
+const increment = () => {
+  state.count++
+  nextTick(() => {
+    // console.log(ele)
+  })
 }
 
 const raw = {}
@@ -16,7 +23,11 @@ console.log('原始对象和代理后的值不相等')
 </script>
 
 <template>
-  <div class=""></div>
+  <div class="reactive-view">
+    <button @click="increment">
+      {{ state.count }}
+    </button>
+  </div>
 </template>
 
 <style>

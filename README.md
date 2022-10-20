@@ -30,3 +30,24 @@ Vue 的模板会被一个叫作编译器的程序编译为渲染函数
 响应系统和副作用函数
 
 虚拟 DOM 使用 JavaScript 对象来描述 UI 的方式
+
+建立在标准 HTML CSS 和 JavaScript 之上 具有直观的 API 和世界级别的文档
+
+反应式、编译器优化 渲染系统 很少需要手动优化
+
+在库和功能齐全的框架之间扩展
+
+`SFC` 是 Vue 的一个定义特性，
+通常与 `<script setup></script>` setup 属性是一个提示 vue 执行编译时转换，
+
+Options API 组件实例概念中心 OOP 语言北京的用户基于类的心理模型
+
+```js
+const app = createApp(根组件)
+
+app.mount(实际的dom元素 或者 css选择器字符串)
+
+<div id="app"></div> 不是应用的一部分
+```
+
+ref 在模板中解包
