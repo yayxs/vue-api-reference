@@ -51,3 +51,61 @@ app.mount(实际的dom元素 或者 css选择器字符串)
 ```
 
 ref 在模板中解包
+
+`typescript` 类型系统编译时通过静态分析检测出常见错误，执行语法转译 不会执行类型检查
+
+`vue-tsc` 是对 `tsc` 的封装 同时支持 Vue 单文件组件
+vite-plugin-checker 在静态检查
+
+`TypeScript Vue Plugin` 支持 ts 中 import vue 文件
+
+volar vue 单文件组件和 ts 一起工作 针对 vue 的 ts 语言服务实例
+响应式的 API `ref` `reactive`
+依赖注入
+
+`VueUse`
+
+一些新功能：
+组合 api
+
+SFC 组合 API 语法糖 setup
+
+teleport
+fragments
+createRenderer
+style 中的 v-bind
+
+- 安装
+
+  - CDN
+  - npm
+  - CLI
+
+- 版本信息
+- Vue Devtools
+
+```sh
+npm install vue@next
+```
+
+- [@vue/compiler-sfc](单文件组件)
+- [官方 CLI]
+- 迁移指南
+- 现代化的工具链
+- 各种类库
+
+支持 Vue3 的新版本路由器、开发工具、测试工具
+
+Vue CLI Vite
+
+Vuex Pinia
+vue-tsc
+
+VitePress
+
+`script setup`
+
+- 更少的样板内容 简洁的代码
+- 使用纯`typescript`
+- 运行时性能
+- 更好的 IDE 类型推导
